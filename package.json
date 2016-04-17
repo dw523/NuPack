@@ -1,0 +1,22 @@
+{
+  "name": "nupack",
+  "version": "1.0.0",
+  "description": "NuPack for nulogy coding test",
+  "main": "nupack.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dw523/NuPack.git"
+  },
+  "author": "Daniel Wright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dw523/NuPack/issues"
+  },
+  "homepage": "https://github.com/dw523/NuPack#readme",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}

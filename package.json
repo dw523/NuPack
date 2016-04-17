@@ -18,5 +18,8 @@
   "homepage": "https://github.com/dw523/NuPack#readme",
   "devDependencies": {
     "jasmine-node": "^1.14.5"
+  },
+  "dependencies": {
+    "bignumber.js": "^2.3.0"
   }
 }

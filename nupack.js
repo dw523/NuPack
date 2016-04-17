@@ -12,8 +12,6 @@ module.exports = {
    * @returns {string}
    */
   calculateMarkup: function (project) {
-    var i;
-
     // Strip out any info from the basePrice that doesn't represent a number (this removes
     // the currency formatting) and assign to a BigNumber to allow for proper calculations
     var result = new BigNumber(project.basePrice.replace(/[^0-9\.]+/g, ''));
@@ -28,9 +26,7 @@ module.exports = {
 
     // For each person that needs to work on the job, there is a markup of 1.2%
     if (project.people) {
-      for (i = 0; i < project.people; i++) {
-        markups.push(result.times('0.012'));
-      }
+      markups.push(result.times('0.012').times(project.people));
     }
 
     if (project.materials) {
